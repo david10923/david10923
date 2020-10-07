@@ -12,14 +12,12 @@
 
     <body>
 
-       <div class="container">
-            
-            <p class="info"><strong>BIENVENIDO</strong> a la pagina de <span>David Fernández Alejo</span>, estudiante de ingeniería del sofware en la<a href ="https://www.ucm.es" ><span> UCM.</span></a> </p>          
-            
+       <div class="container">            
+            <h1 class="animated"><strong>BIENVENIDO</strong> a la página de <span>David Fernández Alejo</span>, estudiante de ingeniería del sofware en la<a href ="https://www.ucm.es" ><span> UCM.</span></a> </h1>          
+            <h2 class="animated">Durante la carrera he estudiado bastantes asignaturas , sin embargo introduciré aquellas que más me han gustado y considero que tengo mas conocimientos.</h2>
        </div>
 
-       <div class="container-info">
-           <p>Durante la carrera he estudiado bastantes asignaturas , sin embargo introduciré aquellas que más me han gustado y considero que tengo mas conocimientos.</p>
+       <div class="container-info animated">           
            <h2> <img src="images/baseDeDatos.png" alt ="Base de datos"> Base de datos SQL <img src="images/baseDeDatos.png" alt ="Base de datos"></h2>
            <div class="baseDeDatosInfo">                       
             <p>En esta asignatura he aprendido a realizar un modelo del dominio ,así como sacar las tablas del modelo entidad-realción.Además en esta asignatura
@@ -28,10 +26,9 @@
                 que no se pueden realizar solo con SQL.Se estudian PROCEDURES, TRIGGERS y elementos que se pueden utilizar dentro de estos procedimientos como pueden ser cursores , 
                 para almacenar contenidos de las tablas o registros para posteriormente consultar la informacion de las tablas. Se introduce también en concepto de transacciones , asi como 
                 los distintos tipos de estados de la transacción despues de hacer sentencias LMD y LDD.
-            </p>
- 
+            </p> 
 
-           </div>
+        </div>
           
 
         
@@ -47,6 +44,16 @@
            </div>
            
        </footer>
+
+       <script>
+        const items = [...document.querySelectorAll('.animated')];
+    
+        for(let i = 0; i < items.length; i++){
+            setTimeout(function(){
+                items[i].classList.add('active');
+            }, 700 * (i +1));
+        }
+        </script>
 
     </body>
 </html>
